@@ -1,14 +1,17 @@
 MAKEFILE += -s
-NAME = phonebook
-CXX = c++
+NAME     = phonebook
+CXX      = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = #AddSourcesHere
-OBJ = $(SRC:.cpp=.o)
+SRC      = Contacts.cpp PhoneBook.cpp main.cpp
+OBJ      = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
@@ -17,5 +20,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: all clean fclean re
