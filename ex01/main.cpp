@@ -6,7 +6,12 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:40:40 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/20 18:40:41 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/20 18:42:11 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int main(int ac, char **av) {
+	(void)ac;
+	(void)av;
+	return (0);
+}
