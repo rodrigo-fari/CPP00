@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:34:59 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/20 18:56:17 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/20 20:38:16 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,9 @@
 
 class Contact {
 	private:
-		//_smt1
-		//_smt2
-		//_smt3
+		//_conteudos privados da classe
 	public:
-		//smt4
-		//smt5
-		//smt6
+		// Metodos para acessar os conteudos privados da classe (setters/getters);
 };
 
 #endif

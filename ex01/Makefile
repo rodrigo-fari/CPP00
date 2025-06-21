@@ -1,8 +1,8 @@
-MAKEFILE += -s
+MAKEFLAGS += -s
 NAME     = phonebook
 CXX      = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC      = Contacts.cpp PhoneBook.cpp main.cpp
+SRC      = Contact.cpp PhoneBook.cpp main.cpp
 OBJ      = $(SRC:.cpp=.o)
 
 all: $(NAME)
