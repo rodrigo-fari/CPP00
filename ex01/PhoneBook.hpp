@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:35:09 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/20 18:56:11 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/22 17:22:29 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,19 @@
 # define PHONEBOOK_HPP
 
 # include <iostream>
+# include <limits>
 # include <cctype>
 # include "Contact.hpp"
 
 class PhoneBook {
 	private:
-		//_smt1
-		//_smt2
-		//_smt3
+		Contact _contacts[8];
+		int		_count;
+		int		_nextIndex;
 	public:
-		//smt4
-		//smt5
-		//smt6
+		PhoneBook();
+		void	addContact();
+		void	searchContact();
 };
 
 #endif
