@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:34:54 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/22 17:22:05 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/22 18:36:33 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,10 @@ void	Contact::displayFull() const {
 }
 
 void	Contact::displayShort(int index) const {
-	std::cout << std::setw(10) << formatField(_firstName)
-		<< formatField(_lastName)
-		<< formatField(_nickname)
-		<< formatField(_phoneNumber)
-		<< formatField(_darkestSecret) << std::endl;
+	std::cout << std::setw(10) << index << "┃"
+			<< formatField(_firstName) << "┃"
+			<< formatField(_lastName) << "┃"
+			<< formatField(_nickname) << std::endl;
 		
 }
 

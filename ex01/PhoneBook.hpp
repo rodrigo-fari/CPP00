@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:35:09 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/22 17:22:29 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/22 19:11:01 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 # define PHONEBOOK_HPP
 
 # include <iostream>
+# include <sstream>
 # include <limits>
+# include <exception>
 # include <cctype>
 # include "Contact.hpp"
 
