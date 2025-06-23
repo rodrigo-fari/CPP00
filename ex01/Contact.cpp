@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:34:54 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/22 18:36:33 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/23 00:45:19 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,31 +19,67 @@ static	std::string formatField(const std::string &field) {
 }
 
 void	Contact::setInfo() {
-	std::cout << "First name: ";
+	std::cout << CLEAR_SCREEN;
+	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[ + ] First name: ";
 	std::getline(std::cin, _firstName);
-	std::cout << "Last name: ";
+	std::cout << CLEAR_SCREEN;
+	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[ + ] Last name: ";
 	std::getline(std::cin, _lastName);
-	std::cout << "Nickname :";
+	std::cout << CLEAR_SCREEN;
+	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[ + ] Nickname: ";
 	std::getline(std::cin, _nickname);
-	std::cout << "Phone number: ";
+	std::cout << CLEAR_SCREEN;
+	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[ + ] Phone number: ";
 	std::getline(std::cin, _phoneNumber);
-	std::cout << "Darkest secret: ";
+	std::cout << CLEAR_SCREEN;
+	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+	std::cout << std::endl;
+	std::cout << "[ + ] Darkest secret: ";
 	std::getline(std::cin, _darkestSecret);
 }
 
 void	Contact::displayFull() const {
-	std::cout << "First name: " << _firstName << std::endl;
-	std::cout << "Last name: " << _lastName << std::endl;
-	std::cout << "Nickname: " << _nickname << std::endl;
-	std::cout << "Phone Number: " << _phoneNumber << std::endl;
-	std::cout << "Darkest secret: " << _darkestSecret << std::endl;
+			std::cout << CLEAR_SCREEN;
+		std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+		std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+		std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+		std::cout << std::endl;
+		std::cout << "･ First name: " << _firstName << std::endl;
+		std::cout << std::endl;
+		std::cout << "･ Last name: " << _lastName << std::endl;
+		std::cout << std::endl;
+		std::cout << "･ Nickname: " << _nickname << std::endl;
+		std::cout << std::endl;
+		std::cout << "･ Phone Number: " << _phoneNumber << std::endl;
+		std::cout << std::endl;
+		std::cout << "･ Darkest secret: " << _darkestSecret << std::endl;
+		std::cout << std::endl;
+		wait_seconds(7);
 }
 
 void	Contact::displayShort(int index) const {
-	std::cout << std::setw(10) << index << "┃"
+	std::cout<< "┃" << std::setw(10) << (index + 1) << "┃"
 			<< formatField(_firstName) << "┃"
 			<< formatField(_lastName) << "┃"
-			<< formatField(_nickname) << std::endl;
+			<< formatField(_nickname) << " ┃" << std::endl;
 		
 }
 
