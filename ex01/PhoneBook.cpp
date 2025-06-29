@@ -6,7 +6,7 @@
 /*   By: rde-fari <rde-fari@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 18:35:06 by rde-fari          #+#    #+#             */
-/*   Updated: 2025/06/23 00:43:16 by rde-fari         ###   ########.fr       */
+/*   Updated: 2025/06/29 16:30:56 by rde-fari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,13 @@ void	PhoneBook::addContact() {
 
 void	PhoneBook::searchContact() {
 	if (_count == 0) {
-	std::cout << CLEAR_SCREEN;
-	std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
-	std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
-	std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
-	std::cout << std::endl;
-	std::cout << "[ ✗ ] PhoneBook is empty!" << std::endl;
+		std::cout << CLEAR_SCREEN;
+		std::cout << "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓" << std::endl;
+		std::cout << "┃      P   H   O   N   E   B   O   O   K     ┃" << std::endl;
+		std::cout << "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛" << std::endl;
+		std::cout << std::endl;
+		std::cout << "[ ✗ ] PhoneBook is empty!" << std::endl;
+		wait_seconds(3);
 		return ;
 	}
 	std::cout << CLEAR_SCREEN;
